@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - GreenEye</title>
+    <link rel="stylesheet" href="styles.css?v=5">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-seedling"></i>
+                <span>GreenEye</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="programs.html" class="nav-link">Programs</a></li>
+                <li><a href="impact.html" class="nav-link">Impact</a></li>
+                <li><a href="volunteer.html" class="nav-link active">Volunteer</a></li>
+                <li><a href="donate.html" class="nav-link">Donate</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="register.html" class="nav-link">Register</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Join Our Green Army</h1>
+            <p>Be part of the solution. Volunteer with us and make a real difference.</p>
+        </div>
+    </section>
+
+    <!-- Volunteer Content -->
+    <section class="volunteer-page">
+        <div class="container">
+            <div class="volunteer-content">
+                <div class="volunteer-image">
+                    <img src="https://pixabay.com/get/g2057fc3d3988e528d2072d760a95a7a10aa17720beef56f175d2157b75e230da083b37dedf96c198563ae503267323428dac79ab10d954dd179b8a9e6396884d_1280.jpg" alt="Community Volunteers">
+                </div>
+                <div class="volunteer-form-container">
+                    <h3>Volunteer Registration</h3>
+                    <form class="volunteer-form" id="volunteerForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="form-group">
+                            <select id="city" name="city" required>
+                                <option value="">Select Your City</option>
+                                <option value="jaipur">Jaipur</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="pune">Pune</option>
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="kolkata">Kolkata</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="form-group">
+                            <select id="availability" name="availability" required>
+                                <option value="">Availability</option>
+                                <option value="weekends">Weekends Only</option>
+                                <option value="weekdays">Weekdays</option>
+                                <option value="flexible">Flexible</option>
+                                <option value="events">Events Only</option>
+                            </select>
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="motivation" name="motivation" placeholder="Why do you want to volunteer with us?" rows="4"></textarea>
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-hands-helping"></i>
+                            Register as Volunteer
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>GreenEye</span>
+                    </div>
+                    <p>Dedicated to creating a greener, more sustainable future through tree plantation and environmental conservation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> contact@greeneye.foundation</li>
+                        <li><i class="fas fa-phone"></i> 7023277322</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Prime, C11, Kanak Vrindavan, Jaipur, Rajasthan, Bajiri Mandi-302034</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 GreenEye. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="page-script.js"></script>
+</body>
+</html>

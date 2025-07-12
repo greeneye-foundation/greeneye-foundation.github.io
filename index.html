@@ -1,153 +1,521 @@
 <!DOCTYPE html>
-<html class="h-100">
-
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="shortcut icon" href="./assets/images/pentagram.ico" />
-  <link rel="apple-touch-icon" href="./assets/images/pentagram.svg" />
-  <link rel="canonical" href="https://geye.io/">
-  <title>GreenEye</title>
-  <meta name="description" content="Towards a sustainable future">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenEye - Planting Tomorrow</title>
+    <link rel="stylesheet" href="styles.css?v=4">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-seedling"></i>
+                <span>GreenEye</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="programs.html" class="nav-link">Programs</a></li>
+                <li><a href="impact.html" class="nav-link">Impact</a></li>
+                <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+                <li><a href="donate.html" class="nav-link">Donate</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="register.html" class="nav-link">Register</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-<body class="d-flex flex-column h-100">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
-      <img src="./assets/images/pentagram.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-      GreenEye
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="https://pixabay.com/get/g6160ab0932297547c6b89d675a1550ee2a684f87e0ad077d548cfeadf5784fa7524acbfb904790f1583fa42f56dd16e535f57b65913deb5d063e709b86fd1ba2_1280.jpg" alt="Green Forest" class="hero-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-title-main">Plant Today,</span>
+                <span class="hero-title-sub">Breathe Tomorrow</span>
+            </h1>
+            <p class="hero-description">
+                Join our mission to combat climate change through massive tree plantation drives and environmental conservation initiatives across the globe.
+            </p>
+            <div class="hero-buttons">
+                <a href="#volunteer" class="btn btn-primary">
+                    <i class="fas fa-hands-helping"></i>
+                    Join Our Mission
+                </a>
+                <a href="#donate" class="btn btn-secondary">
+                    <i class="fas fa-heart"></i>
+                    Donate Now
+                </a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number" data-target="50000">0</span>
+                <span class="stat-label">Trees Planted</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="1200">0</span>
+                <span class="stat-label">Volunteers</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" data-target="25">0</span>
+                <span class="stat-label">Cities Covered</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Our Mission</h2>
+                <p class="section-subtitle">Dedicated to creating a greener, more sustainable future for generations to come</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Vision</h3>
+                    <p>To create a world where every community has access to clean air, green spaces, and a sustainable environment through massive reforestation efforts and environmental education.</p>
+                    
+                    <h3>Our Impact</h3>
+                    <p>Since our founding, we've planted over 50,000 trees, educated thousands of community members about environmental conservation, and established sustainable green practices in urban and rural areas.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-tree"></i>
+                            <h4>Tree Plantation</h4>
+                            <p>Large-scale plantation drives in deforested areas</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Education</h4>
+                            <p>Environmental awareness programs for all ages</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-recycle"></i>
+                            <h4>Sustainability</h4>
+                            <p>Promoting eco-friendly practices and recycling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://pixabay.com/get/ga479b084cef8746ba8fbee44f13ddd3cba1463c2e4220f44216260d46afd59597a5c2480a3eab70bd85dd21305913d640ec1ba7302b425de682277c833397e87_1280.jpg" alt="Environmental Conservation" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Programs</h2>
+                <p class="section-subtitle">Comprehensive initiatives designed to maximize environmental impact</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="https://pixabay.com/get/ge6561416c2280df0d93121392bc1eeeb06f2a1115e4a17b873b0c1a918625dfdffe3333a796a089715fc7f93d175acba4714427188ba32e64a7d3d84020ed078_1280.jpg" alt="Urban Reforestation">
+                    </div>
+                    <div class="program-content">
+                        <h3>Urban Reforestation</h3>
+                        <p>Transforming concrete jungles into green oases through strategic tree plantation in urban areas, parks, and abandoned lots.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> 500+ trees per drive</li>
+                            <li><i class="fas fa-check"></i> Native species selection</li>
+                            <li><i class="fas fa-check"></i> Community involvement</li>
+                        </ul>
+                        <a href="#volunteer" class="btn btn-outline">Join Program</a>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="https://pixabay.com/get/ga18af6cce3b402062d87de9e8d182b0a30748f2ad29ed1bf41a0b1e2d4de9535547cedd7ebfd1fa67834580b029a32c5ee9bc18f40e2a3c80e37e8fbbc92b72a_1280.jpg" alt="Community Plantation">
+                    </div>
+                    <div class="program-content">
+                        <h3>Community Plantation Drives</h3>
+                        <p>Engaging local communities in large-scale plantation activities to create awareness and foster environmental stewardship.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Weekend activities</li>
+                            <li><i class="fas fa-check"></i> Family-friendly events</li>
+                            <li><i class="fas fa-check"></i> Educational workshops</li>
+                        </ul>
+                        <a href="#volunteer" class="btn btn-outline">Join Program</a>
+                    </div>
+                </div>
+                
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="https://pixabay.com/get/gf8523dc025c34d3d296bcd7332b1b4cc5497f8d8a780eebe8b53566dccec4807a3d196b85dcfa19d51f6e72a0f20eaef2a27f4ce30c74c2432d942c1e3ab980b_1280.jpg" alt="School Programs">
+                    </div>
+                    <div class="program-content">
+                        <h3>School Green Programs</h3>
+                        <p>Educating the next generation through hands-on environmental programs in schools and educational institutions.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Curriculum integration</li>
+                            <li><i class="fas fa-check"></i> School garden projects</li>
+                            <li><i class="fas fa-check"></i> Student leadership</li>
+                        </ul>
+                        <a href="#volunteer" class="btn btn-outline">Join Program</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="impact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Environmental Impact</h2>
+                <p class="section-subtitle">Measurable results in the fight against climate change</p>
+            </div>
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="impact-number" data-target="50000">0</div>
+                    <div class="impact-label">Trees Planted</div>
+                    <div class="impact-description">Across 25 cities in the last 3 years</div>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <div class="impact-number" data-target="75000">0</div>
+                    <div class="impact-label">Tons CO₂ Absorbed</div>
+                    <div class="impact-description">Annual carbon dioxide absorption</div>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="impact-number" data-target="1200">0</div>
+                    <div class="impact-label">Active Volunteers</div>
+                    <div class="impact-description">Dedicated environmental advocates</div>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="impact-number" data-target="25">0</div>
+                    <div class="impact-label">Cities Covered</div>
+                    <div class="impact-description">Growing network of green initiatives</div>
+                </div>
+            </div>
+            
+            <div class="impact-visual">
+                <div class="impact-image">
+                    <img src="https://pixabay.com/get/gbe13b12253d210a1d128330a7b00a488b40ecf441583610b6fb4ae93fd5af813fff5c5dd8a7f2548d6bb85d041775c0f55a69204c2f21f562b88122070d79718_1280.jpg" alt="Green Landscape">
+                </div>
+                <div class="impact-content">
+                    <h3>Creating Lasting Change</h3>
+                    <p>Every tree we plant contributes to cleaner air, reduced carbon footprint, and biodiversity conservation. Our strategic approach ensures maximum environmental benefit through:</p>
+                    <ul class="impact-list">
+                        <li><i class="fas fa-leaf"></i> Native species selection for optimal growth</li>
+                        <li><i class="fas fa-leaf"></i> Long-term maintenance and care programs</li>
+                        <li><i class="fas fa-leaf"></i> Community education and involvement</li>
+                        <li><i class="fas fa-leaf"></i> Habitat restoration and wildlife protection</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+    <section id="volunteer" class="volunteer">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Join Our Green Army</h2>
+                <p class="section-subtitle">Be part of the solution. Volunteer with us and make a real difference.</p>
+            </div>
+            <div class="volunteer-content">
+                <div class="volunteer-image">
+                    <img src="https://pixabay.com/get/g2057fc3d3988e528d2072d760a95a7a10aa17720beef56f175d2157b75e230da083b37dedf96c198563ae503267323428dac79ab10d954dd179b8a9e6396884d_1280.jpg" alt="Community Volunteers">
+                </div>
+                <div class="volunteer-form-container">
+                    <h3>Volunteer Registration</h3>
+                    <form class="volunteer-form" id="volunteerForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Full Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email Address" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="form-group">
+                            <select id="city" name="city" required>
+                                <option value="">Select Your City</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="pune">Pune</option>
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="kolkata">Kolkata</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="form-group">
+                            <select id="availability" name="availability" required>
+                                <option value="">Availability</option>
+                                <option value="weekends">Weekends Only</option>
+                                <option value="weekdays">Weekdays</option>
+                                <option value="flexible">Flexible</option>
+                                <option value="events">Events Only</option>
+                            </select>
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="motivation" name="motivation" placeholder="Why do you want to volunteer with us? (Optional)" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-hands-helping"></i>
+                            Register as Volunteer
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donate" class="donate">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Support Our Mission</h2>
+                <p class="section-subtitle">Your contribution helps us plant more trees and create a greener future</p>
+            </div>
+            <div class="donation-content">
+                <div class="donation-info">
+                    <h3>How Your Donation Helps</h3>
+                    <div class="donation-breakdown">
+                        <div class="breakdown-item">
+                            <div class="amount">₹100</div>
+                            <div class="description">Plants 2 saplings with care for 1 year</div>
+                        </div>
+                        <div class="breakdown-item">
+                            <div class="amount">₹500</div>
+                            <div class="description">Supports a community plantation drive</div>
+                        </div>
+                        <div class="breakdown-item">
+                            <div class="amount">₹1000</div>
+                            <div class="description">Sponsors environmental education workshop</div>
+                        </div>
+                        <div class="breakdown-item">
+                            <div class="amount">₹5000</div>
+                            <div class="description">Funds urban reforestation project</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="donation-form-container">
+                    <h3>Make a Donation</h3>
+                    <div class="donation-amounts">
+                        <button class="amount-btn" data-amount="100">₹100</button>
+                        <button class="amount-btn" data-amount="500">₹500</button>
+                        <button class="amount-btn" data-amount="1000">₹1000</button>
+                        <button class="amount-btn" data-amount="5000">₹5000</button>
+                    </div>
+                    <form class="donation-form" id="donationForm">
+                        <div class="form-group">
+                            <input type="number" id="customAmount" name="amount" placeholder="Enter amount (₹)" min="50" required>
+                            <i class="fas fa-rupee-sign"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="donorName" name="donorName" placeholder="Full Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="donorEmail" name="donorEmail" placeholder="Email Address" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="donorPhone" name="donorPhone" placeholder="Phone Number" required>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-heart"></i>
+                            Donate Now
+                        </button>
+                    </form>
+                    <p class="donation-note">
+                        <i class="fas fa-shield-alt"></i>
+                        All donations are secure and tax-deductible under 80G
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to join our mission? Contact us today!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Location</h4>
+                            <p>Prime, C11, Kanak Vrindavan<br>Jaipur, Rajasthan, Bajiri Mandi-302034<br>India</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone Number</h4>
+                            <p>7023277322</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Address</h4>
+                            <p>contact@greeneye.foundation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Send us a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="contactName" name="name" placeholder="Your Name" required>
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="contactEmail" name="email" placeholder="Your Email" required>
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>GreenEye</span>
+                    </div>
+                    <p>Dedicated to creating a greener, more sustainable future through tree plantation and environmental conservation.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#impact">Our Impact</a></li>
+                        <li><a href="#volunteer">Volunteer</a></li>
+                        <li><a href="#donate">Donate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="#programs">Urban Reforestation</a></li>
+                        <li><a href="#programs">Community Drives</a></li>
+                        <li><a href="#programs">School Programs</a></li>
+                        <li><a href="#programs">Corporate Partnerships</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-map-marker-alt"></i> Prime, C11, Kanak Vrindavan, Jaipur, Rajasthan, Bajiri Mandi-302034</p>
+                        <p><i class="fas fa-phone"></i> 7023277322</p>
+                        <p><i class="fas fa-envelope"></i> contact@greeneye.foundation</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 GreenEye. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Gallery</a>
-        </li> -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Projects
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Green Act</a>
-            <a class="dropdown-item" href="#">My Forest</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Submit U'r Idea</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="registration.html">Registration</a>
-        </li>
-      </ul>
-      <!-- <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
-    </div>
-  </nav>
-  <!-- <h1>Welcome to GEYE INNOVATION FOUNDATION</h1> -->
-  <section class="jumbotron text-center">
-    <div class="container">
-      <h1>Initiatives</h1>
-      <!-- <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p> -->
-    </div>
-  </section>
-  <div class="album py-5 bg-dark">
-    <div class="container">
-
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Urban Balcony Project</text>
-            </svg> -->
-            <img src="./assets/images/urban-balcony-project.jpeg" />
-            <div class="card-body">
-              <p class="card-text">501 Terracota Plants</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">501</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">1
-                Acre Forest!</text>
-            </svg>
-            <div class="card-body">
-              <p class="card-text">Help us grow Argo Forest</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">500</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Celebrate child birth</text>
-            </svg>
-            <div class="card-body">
-              <p class="card-text">Plant 101 fruits tree</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">101</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <footer class="footer mt-auto py-3">
-    <div class="container-fluid">
-      <span class="text-muted">GEYE INNOVATION FOUNDATION &copy; 2020, Mail: contact@geye.io</span>
-    </div>
-  </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>

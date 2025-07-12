@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - GreenEye</title>
+    <link rel="stylesheet" href="styles.css?v=5">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-seedling"></i>
+                <span>GreenEye</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="programs.html" class="nav-link">Programs</a></li>
+                <li><a href="impact.html" class="nav-link">Impact</a></li>
+                <li><a href="volunteer.html" class="nav-link">Volunteer</a></li>
+                <li><a href="donate.html" class="nav-link">Donate</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="register.html" class="nav-link">Register</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Office</h4>
+                            <p> Prime, C11, Kanak Vrindavan, Jaipur, Rajasthan, Bajiri Mandi-302034</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>7023277322<br>Mon-Fri: 9AM-6PM</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>contact@greeneye.foundation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Send us a Message</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="contactEmail" name="email" placeholder="Email Address" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" id="contactPhone" name="phone" placeholder="Phone Number">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="volunteer">Volunteer Opportunities</option>
+                                <option value="donation">Donation Inquiry</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="general">General Question</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
+                            <i class="fas fa-comment"></i>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-seedling"></i>
+                        <span>GreenEye</span>
+                    </div>
+                    <p>Dedicated to creating a greener, more sustainable future through tree plantation and environmental conservation.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-envelope"></i> contact@greeneye.foundation</li>
+                        <li><i class="fas fa-phone"></i> 7023277322</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Prime, C11, Kanak Vrindavan, Jaipur, Rajasthan, Bajiri Mandi-302034</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 GreenEye. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="page-script.js"></script>
+</body>
+</html>
